@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "KVS Demo Admin Statistics"
+description = "A fictional PM SHRI Kendriya Vidyalaya admin prototype for managing Class-Wise Enrolment Position statistics with local browser persistence and a configurable public preview link."
+version = "1.0.0"
+id = "artifacts/kvs-demo-admin"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24083
+
+[services.development]
+run = "pnpm --filter @workspace/kvs-demo-admin run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/kvs-demo-admin", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/kvs-demo-admin/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24083"
+BASE_PATH = "/"

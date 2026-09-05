@@ -1,0 +1,584 @@
+{
+  "metadata": {
+    "sourceFile": "30.06.2026 ENROLLMENT(5).xlsx",
+    "sourceSheet": "ENROLLMENT 30.06.2026",
+    "sourceDate": "30/06/2026",
+    "recordCount": 27,
+    "notes": {
+      "totalRowsExcluded": "Excel TOTAL rows were not included because the extension needs individual source records.",
+      "authorisedCapacity": "Not present in the source Excel, so this is null and must not be fabricated.",
+      "numberOfSections": "Each individual source row is one section/record.",
+      "otherBackwardClasses": "Derived as OBC-NC total + OBC Creamy total.",
+      "generalMinorities": "Derived as Muslim total + Other Minor total + Sikh total."
+    }
+  },
+  "records": [
+    {
+      "id": "Balvatika-III",
+      "displayName": "Balvatika-III",
+      "sourceClass": "Balvatika-III",
+      "section": null,
+      "finalDisplayGroup": "Balvatika-III",
+      "fields": {
+        "numberOfSections": 1,
+        "authorisedCapacity": 40,
+        "totalEnrolledStudents": 37,
+        "boys": 14,
+        "girls": 23,
+        "scheduledCaste": 8,
+        "scheduledTribes": 0,
+        "otherBackwardClasses": 18,
+        "ph": 0,
+        "general": 11,
+        "generalMinorities": 0,
+        "lastUpdated": "30/06/2026"
+      }
+    },
+    {
+      "id": "1-A",
+      "displayName": "1-A",
+      "sourceClass": "1",
+      "section": "A",
+      "finalDisplayGroup": "1",
+      "fields": {
+        "numberOfSections": 1,
+        "authorisedCapacity": 40,
+        "totalEnrolledStudents": 40,
+        "boys": 23,
+        "girls": 17,
+        "scheduledCaste": 8,
+        "scheduledTribes": 0,
+        "otherBackwardClasses": 19,
+        "ph": 1,
+        "general": 12,
+        "generalMinorities": 0,
+        "lastUpdated": "30/06/2026"
+      }
+    },
+    {
+      "id": "1-B",
+      "displayName": "1-B",
+      "sourceClass": "1",
+      "section": "B",
+      "finalDisplayGroup": "1",
+      "fields": {
+        "numberOfSections": 1,
+        "authorisedCapacity": 40,
+        "totalEnrolledStudents": 36,
+        "boys": 22,
+        "girls": 14,
+        "scheduledCaste": 6,
+        "scheduledTribes": 2,
+        "otherBackwardClasses": 17,
+        "ph": 0,
+        "general": 11,
+        "generalMinorities": 0,
+        "lastUpdated": "30/06/2026"
+      }
+    },
+    {
+      "id": "2-A",
+      "displayName": "2-A",
+      "sourceClass": "2",
+      "section": "A",
+      "finalDisplayGroup": "2",
+      "fields": {
+        "numberOfSections": 1,
+        "authorisedCapacity": 40,
+        "totalEnrolledStudents": 40,
+        "boys": 18,
+        "girls": 22,
+        "scheduledCaste": 9,
+        "scheduledTribes": 0,
+        "otherBackwardClasses": 20,
+        "ph": 1,
+        "general": 10,
+        "generalMinorities": 0,
+        "lastUpdated": "30/06/2026"
+      }
+    },
+    {
+      "id": "2-B",
+      "displayName": "2-B",
+      "sourceClass": "2",
+      "section": "B",
+      "finalDisplayGroup": "2",
+      "fields": {
+        "numberOfSections": 1,
+        "authorisedCapacity": 40,
+        "totalEnrolledStudents": 40,
+        "boys": 20,
+        "girls": 20,
+        "scheduledCaste": 9,
+        "scheduledTribes": 0,
+        "otherBackwardClasses": 21,
+        "ph": 0,
+        "general": 10,
+        "generalMinorities": 0,
+        "lastUpdated": "30/06/2026"
+      }
+    },
+    {
+      "id": "3-A",
+      "displayName": "3-A",
+      "sourceClass": "3",
+      "section": "A",
+      "finalDisplayGroup": "3",
+      "fields": {
+        "numberOfSections": 1,
+        "authorisedCapacity": 40,
+        "totalEnrolledStudents": 40,
+        "boys": 19,
+        "girls": 21,
+        "scheduledCaste": 12,
+        "scheduledTribes": 1,
+        "otherBackwardClasses": 23,
+        "ph": 0,
+        "general": 4,
+        "generalMinorities": 0,
+        "lastUpdated": "30/06/2026"
+      }
+    },
+    {
+      "id": "3-B",
+      "displayName": "3-B",
+      "sourceClass": "3",
+      "section": "B",
+      "finalDisplayGroup": "3",
+      "fields": {
+        "numberOfSections": 1,
+        "authorisedCapacity": 40,
+        "totalEnrolledStudents": 40,
+        "boys": 28,
+        "girls": 12,
+        "scheduledCaste": 13,
+        "scheduledTribes": 1,
+        "otherBackwardClasses": 12,
+        "ph": 0,
+        "general": 14,
+        "generalMinorities": 0,
+        "lastUpdated": "30/06/2026"
+      }
+    },
+    {
+      "id": "4-A",
+      "displayName": "4-A",
+      "sourceClass": "4",
+      "section": "A",
+      "finalDisplayGroup": "4",
+      "fields": {
+        "numberOfSections": 1,
+        "authorisedCapacity": 40,
+        "totalEnrolledStudents": 41,
+        "boys": 17,
+        "girls": 24,
+        "scheduledCaste": 9,
+        "scheduledTribes": 0,
+        "otherBackwardClasses": 18,
+        "ph": 1,
+        "general": 13,
+        "generalMinorities": 0,
+        "lastUpdated": "30/06/2026"
+      }
+    },
+    {
+      "id": "4-B",
+      "displayName": "4-B",
+      "sourceClass": "4",
+      "section": "B",
+      "finalDisplayGroup": "4",
+      "fields": {
+        "numberOfSections": 1,
+        "authorisedCapacity": 40,
+        "totalEnrolledStudents": 41,
+        "boys": 20,
+        "girls": 21,
+        "scheduledCaste": 11,
+        "scheduledTribes": 0,
+        "otherBackwardClasses": 21,
+        "ph": 0,
+        "general": 9,
+        "generalMinorities": 0,
+        "lastUpdated": "30/06/2026"
+      }
+    },
+    {
+      "id": "5-A",
+      "displayName": "5-A",
+      "sourceClass": "5",
+      "section": "A",
+      "finalDisplayGroup": "5",
+      "fields": {
+        "numberOfSections": 1,
+        "authorisedCapacity": 40,
+        "totalEnrolledStudents": 40,
+        "boys": 22,
+        "girls": 18,
+        "scheduledCaste": 12,
+        "scheduledTribes": 0,
+        "otherBackwardClasses": 13,
+        "ph": 1,
+        "general": 14,
+        "generalMinorities": 0,
+        "lastUpdated": "30/06/2026"
+      }
+    },
+    {
+      "id": "5-B",
+      "displayName": "5-B",
+      "sourceClass": "5",
+      "section": "B",
+      "finalDisplayGroup": "5",
+      "fields": {
+        "numberOfSections": 1,
+        "authorisedCapacity": 40,
+        "totalEnrolledStudents": 40,
+        "boys": 22,
+        "girls": 18,
+        "scheduledCaste": 10,
+        "scheduledTribes": 0,
+        "otherBackwardClasses": 25,
+        "ph": 0,
+        "general": 5,
+        "generalMinorities": 0,
+        "lastUpdated": "30/06/2026"
+      }
+    },
+    {
+      "id": "6-A",
+      "displayName": "6-A",
+      "sourceClass": "6",
+      "section": "A",
+      "finalDisplayGroup": "6",
+      "fields": {
+        "numberOfSections": 1,
+        "authorisedCapacity": 40,
+        "totalEnrolledStudents": 47,
+        "boys": 25,
+        "girls": 22,
+        "scheduledCaste": 12,
+        "scheduledTribes": 0,
+        "otherBackwardClasses": 21,
+        "ph": 0,
+        "general": 14,
+        "generalMinorities": 0,
+        "lastUpdated": "30/06/2026"
+      }
+    },
+    {
+      "id": "6-B",
+      "displayName": "6-B",
+      "sourceClass": "6",
+      "section": "B",
+      "finalDisplayGroup": "6",
+      "fields": {
+        "numberOfSections": 1,
+        "authorisedCapacity": 40,
+        "totalEnrolledStudents": 45,
+        "boys": 21,
+        "girls": 24,
+        "scheduledCaste": 6,
+        "scheduledTribes": 0,
+        "otherBackwardClasses": 24,
+        "ph": 1,
+        "general": 14,
+        "generalMinorities": 0,
+        "lastUpdated": "30/06/2026"
+      }
+    },
+    {
+      "id": "7-A",
+      "displayName": "7-A",
+      "sourceClass": "7",
+      "section": "A",
+      "finalDisplayGroup": "7",
+      "fields": {
+        "numberOfSections": 1,
+        "authorisedCapacity": 40,
+        "totalEnrolledStudents": 40,
+        "boys": 20,
+        "girls": 20,
+        "scheduledCaste": 8,
+        "scheduledTribes": 0,
+        "otherBackwardClasses": 22,
+        "ph": 0,
+        "general": 10,
+        "generalMinorities": 0,
+        "lastUpdated": "30/06/2026"
+      }
+    },
+    {
+      "id": "7-B",
+      "displayName": "7-B",
+      "sourceClass": "7",
+      "section": "B",
+      "finalDisplayGroup": "7",
+      "fields": {
+        "numberOfSections": 1,
+        "authorisedCapacity": 40,
+        "totalEnrolledStudents": 39,
+        "boys": 16,
+        "girls": 23,
+        "scheduledCaste": 6,
+        "scheduledTribes": 0,
+        "otherBackwardClasses": 24,
+        "ph": 0,
+        "general": 9,
+        "generalMinorities": 0,
+        "lastUpdated": "30/06/2026"
+      }
+    },
+    {
+      "id": "8-A",
+      "displayName": "8-A",
+      "sourceClass": "8",
+      "section": "A",
+      "finalDisplayGroup": "8",
+      "fields": {
+        "numberOfSections": 1,
+        "authorisedCapacity": 40,
+        "totalEnrolledStudents": 48,
+        "boys": 23,
+        "girls": 25,
+        "scheduledCaste": 8,
+        "scheduledTribes": 0,
+        "otherBackwardClasses": 21,
+        "ph": 0,
+        "general": 19,
+        "generalMinorities": 0,
+        "lastUpdated": "30/06/2026"
+      }
+    },
+    {
+      "id": "8-B",
+      "displayName": "8-B",
+      "sourceClass": "8",
+      "section": "B",
+      "finalDisplayGroup": "8",
+      "fields": {
+        "numberOfSections": 1,
+        "authorisedCapacity": 40,
+        "totalEnrolledStudents": 47,
+        "boys": 25,
+        "girls": 22,
+        "scheduledCaste": 14,
+        "scheduledTribes": 0,
+        "otherBackwardClasses": 10,
+        "ph": 0,
+        "general": 23,
+        "generalMinorities": 0,
+        "lastUpdated": "30/06/2026"
+      }
+    },
+    {
+      "id": "9-A",
+      "displayName": "9-A",
+      "sourceClass": "9",
+      "section": "A",
+      "finalDisplayGroup": "9",
+      "fields": {
+        "numberOfSections": 1,
+        "authorisedCapacity": 40,
+        "totalEnrolledStudents": 43,
+        "boys": 22,
+        "girls": 21,
+        "scheduledCaste": 9,
+        "scheduledTribes": 0,
+        "otherBackwardClasses": 24,
+        "ph": 0,
+        "general": 10,
+        "generalMinorities": 0,
+        "lastUpdated": "30/06/2026"
+      }
+    },
+    {
+      "id": "9-B",
+      "displayName": "9-B",
+      "sourceClass": "9",
+      "section": "B",
+      "finalDisplayGroup": "9",
+      "fields": {
+        "numberOfSections": 1,
+        "authorisedCapacity": 40,
+        "totalEnrolledStudents": 43,
+        "boys": 23,
+        "girls": 20,
+        "scheduledCaste": 9,
+        "scheduledTribes": 0,
+        "otherBackwardClasses": 15,
+        "ph": 0,
+        "general": 19,
+        "generalMinorities": 0,
+        "lastUpdated": "30/06/2026"
+      }
+    },
+    {
+      "id": "10-A",
+      "displayName": "10-A",
+      "sourceClass": "10",
+      "section": "A",
+      "finalDisplayGroup": "10",
+      "fields": {
+        "numberOfSections": 1,
+        "authorisedCapacity": 40,
+        "totalEnrolledStudents": 38,
+        "boys": 18,
+        "girls": 20,
+        "scheduledCaste": 5,
+        "scheduledTribes": 1,
+        "otherBackwardClasses": 10,
+        "ph": 0,
+        "general": 22,
+        "generalMinorities": 0,
+        "lastUpdated": "30/06/2026"
+      }
+    },
+    {
+      "id": "10-B",
+      "displayName": "10-B",
+      "sourceClass": "10",
+      "section": "B",
+      "finalDisplayGroup": "10",
+      "fields": {
+        "numberOfSections": 1,
+        "authorisedCapacity": 40,
+        "totalEnrolledStudents": 35,
+        "boys": 18,
+        "girls": 17,
+        "scheduledCaste": 6,
+        "scheduledTribes": 0,
+        "otherBackwardClasses": 14,
+        "ph": 0,
+        "general": 15,
+        "generalMinorities": 0,
+        "lastUpdated": "30/06/2026"
+      }
+    },
+    {
+      "id": "XI-Arts",
+      "displayName": "XI-Arts",
+      "sourceClass": "XI-Arts",
+      "section": null,
+      "finalDisplayGroup": "XI-Arts",
+      "fields": {
+        "numberOfSections": 1,
+        "authorisedCapacity": 40,
+        "totalEnrolledStudents": 31,
+        "boys": 16,
+        "girls": 15,
+        "scheduledCaste": 7,
+        "scheduledTribes": 0,
+        "otherBackwardClasses": 18,
+        "ph": 0,
+        "general": 6,
+        "generalMinorities": 0,
+        "lastUpdated": "30/06/2026"
+      }
+    },
+    {
+      "id": "XI-Science",
+      "displayName": "XI-Science",
+      "sourceClass": "XI-Science",
+      "section": null,
+      "finalDisplayGroup": "XI-Science",
+      "fields": {
+        "numberOfSections": 1,
+        "authorisedCapacity": 40,
+        "totalEnrolledStudents": 41,
+        "boys": 31,
+        "girls": 10,
+        "scheduledCaste": 6,
+        "scheduledTribes": 0,
+        "otherBackwardClasses": 22,
+        "ph": 0,
+        "general": 13,
+        "generalMinorities": 0,
+        "lastUpdated": "30/06/2026"
+      }
+    },
+    {
+      "id": "XI-Commerce",
+      "displayName": "XI-Commerce",
+      "sourceClass": "XI-Commerce",
+      "section": null,
+      "finalDisplayGroup": "XI-Commerce",
+      "fields": {
+        "numberOfSections": 1,
+        "authorisedCapacity": 40,
+        "totalEnrolledStudents": 34,
+        "boys": 20,
+        "girls": 14,
+        "scheduledCaste": 2,
+        "scheduledTribes": 0,
+        "otherBackwardClasses": 12,
+        "ph": 0,
+        "general": 20,
+        "generalMinorities": 0,
+        "lastUpdated": "30/06/2026"
+      }
+    },
+    {
+      "id": "XII-Arts",
+      "displayName": "XII-Arts",
+      "sourceClass": "XII-Arts",
+      "section": null,
+      "finalDisplayGroup": "XII-Arts",
+      "fields": {
+        "numberOfSections": 1,
+        "authorisedCapacity": 40,
+        "totalEnrolledStudents": 22,
+        "boys": 9,
+        "girls": 13,
+        "scheduledCaste": 4,
+        "scheduledTribes": 1,
+        "otherBackwardClasses": 12,
+        "ph": 0,
+        "general": 5,
+        "generalMinorities": 0,
+        "lastUpdated": "30/06/2026"
+      }
+    },
+    {
+      "id": "XII-Science",
+      "displayName": "XII-Science",
+      "sourceClass": "XII-Science",
+      "section": null,
+      "finalDisplayGroup": "XII-Science",
+      "fields": {
+        "numberOfSections": 1,
+        "authorisedCapacity": 40,
+        "totalEnrolledStudents": 23,
+        "boys": 7,
+        "girls": 16,
+        "scheduledCaste": 3,
+        "scheduledTribes": 0,
+        "otherBackwardClasses": 13,
+        "ph": 0,
+        "general": 7,
+        "generalMinorities": 0,
+        "lastUpdated": "30/06/2026"
+      }
+    },
+    {
+      "id": "XII-Commerce",
+      "displayName": "XII-Commerce",
+      "sourceClass": "XII-Commerce",
+      "section": null,
+      "finalDisplayGroup": "XII-Commerce",
+      "fields": {
+        "numberOfSections": 1,
+        "authorisedCapacity": 40,
+        "totalEnrolledStudents": 20,
+        "boys": 8,
+        "girls": 12,
+        "scheduledCaste": 2,
+        "scheduledTribes": 0,
+        "otherBackwardClasses": 11,
+        "ph": 0,
+        "general": 7,
+        "generalMinorities": 0,
+        "lastUpdated": "30/06/2026"
+      }
+    }
+  ]
+}

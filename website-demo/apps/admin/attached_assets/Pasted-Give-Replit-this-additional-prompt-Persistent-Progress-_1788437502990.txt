@@ -1,0 +1,85 @@
+Give Replit this **additional prompt**:
+
+---
+
+## Persistent Progress and Completion State
+
+Currently, when a user selects/completes a section and a tick/checkmark appears, the tick disappears when the user navigates to another section and then comes back.
+
+Fix this.
+
+### Required behavior
+
+The completion state of every section must persist throughout the user's session and remain visible when navigating between sections.
+
+For example:
+
+1. User selects/completes **Section A**.
+2. A ✓ tick/checkmark appears next to Section A.
+3. User navigates to **Section B**.
+4. User later returns to **Section A**.
+5. The ✓ tick for Section A must still be displayed.
+
+The same should work independently for all sections.
+
+### Persistence requirements
+
+Do not store completion/tick state only in temporary component state that resets when the page or component changes.
+
+Use persistent state management, preferably `localStorage`, to save the completion status of each section.
+
+Use a structure similar to:
+
+```javascript
+{
+  "1-A": true,
+  "1-B": false,
+  "2-A": true,
+  "2-B": false
+}
+```
+
+or adapt the keys to match the actual section IDs used in the application.
+
+### On application load
+
+When the website loads:
+
+1. Read the saved completion/progress state from `localStorage`.
+2. Restore all previously completed sections.
+3. Display ticks/checkmarks next to every section marked as completed.
+
+### When a section is completed
+
+Immediately:
+
+1. Update the UI.
+2. Add the tick/checkmark.
+3. Save the updated progress state to `localStorage`.
+
+### When navigating
+
+Navigation between:
+
+* classes
+* sections
+* statistics pages
+* other relevant pages
+
+must **not reset previously completed ticks**.
+
+### Page refresh
+
+Progress should also remain after a normal page refresh.
+
+Only clear/reset the progress if there is an explicit **Reset Progress** action.
+
+### Important
+
+Keep this change integrated with the existing application. Do not redesign the UI or change the current navigation workflow.
+
+The goal is simply:
+
+> **Once a section receives a tick, that tick should remain visible when the user navigates away and comes back, until the progress is explicitly reset.**
+
+Use the existing section/class identifiers consistently so each section retains its own completion state.

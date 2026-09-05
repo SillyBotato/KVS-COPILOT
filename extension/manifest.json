@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "KVS Copilot Autofill",
+  "version": "2.0.0",
+  "description": "Autofills KVS enrollment statistics forms with approved Excel data",
+
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "KVS Copilot Autofill"
+  },
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://kvs-copilot-demo-5q9e.vercel.app/statistics/edit/*",
+        "https://kvs-copilot-demo-5q9e.vercel.app/statistics/class-wise"
+      ],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ],
+
+  "host_permissions": [
+    "https://kvs-copilot-demo-5q9e.vercel.app/*",
+    "https://kvs-copilot-production-010b.up.railway.app/*"
+  ],
+
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ]
+}

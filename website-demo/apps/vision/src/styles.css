@@ -1,0 +1,309 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-portal: Arial, Helvetica, sans-serif;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-portal-blue: var(--portal-blue);
+  --color-portal-blue-deep: var(--portal-blue-deep);
+  --color-portal-teal: var(--portal-teal);
+  --color-portal-aqua: var(--portal-aqua);
+  --color-portal-gold: var(--portal-gold);
+  --color-table-head: var(--table-head);
+  --color-table-stripe: var(--table-stripe);
+}
+
+:root {
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.19 0.01 264);
+  --primary: oklch(0.56 0.19 264);
+  --primary-foreground: oklch(0.99 0 0);
+  --secondary: oklch(0.72 0.11 190);
+  --secondary-foreground: oklch(0.18 0.04 255);
+  --muted: oklch(0.96 0.004 260);
+  --muted-foreground: oklch(0.42 0.015 260);
+  --accent: oklch(0.78 0.1 173);
+  --accent-foreground: oklch(0.23 0.06 255);
+  --border: oklch(0.86 0.006 260);
+  --input: oklch(0.86 0.006 260);
+  --ring: oklch(0.56 0.19 264);
+  --portal-blue: oklch(0.55 0.19 264);
+  --portal-blue-deep: oklch(0.49 0.2 265);
+  --portal-teal: oklch(0.71 0.11 192);
+  --portal-aqua: oklch(0.77 0.11 169);
+  --portal-gold: oklch(0.84 0.15 84);
+  --table-head: oklch(0.27 0.035 270);
+  --table-stripe: oklch(0.963 0.002 260);
+}
+
+@layer base {
+  * { border-color: var(--color-border); }
+  html { min-width: 320px; }
+  body {
+    margin: 0;
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+  }
+  button { cursor: pointer; }
+}
+
+@utility portal-shell {
+  width: min(100% - 40px, 1220px);
+  margin-inline: auto;
+}
+
+@utility portal-utility-bar {
+  height: 40px;
+  color: var(--color-primary-foreground);
+  background: linear-gradient(105deg, var(--portal-blue-deep), var(--portal-teal));
+  border-bottom: 1px solid color-mix(in oklab, var(--primary-foreground) 34%, transparent);
+}
+
+@utility utility-button {
+  display: grid;
+  width: 45px;
+  place-items: center;
+  color: inherit;
+  border-left: 1px solid color-mix(in oklab, var(--primary-foreground) 28%, transparent);
+  background: transparent;
+  &:hover, &:focus-visible { background: color-mix(in oklab, var(--primary-foreground) 14%, transparent); }
+}
+
+@utility portal-institution-header {
+  height: 173px;
+  color: var(--color-primary-foreground);
+  background: linear-gradient(105deg, var(--portal-blue-deep) 4%, var(--portal-teal) 100%);
+}
+
+@utility kvs-emblem {
+  display: flex;
+  width: 126px;
+  height: 126px;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--portal-gold);
+  border: 3px solid currentColor;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 4px color-mix(in oklab, var(--portal-gold) 34%, transparent);
+  & span { margin-top: 4px; font-size: 17px; font-weight: 700; letter-spacing: 0.08em; }
+}
+
+@utility institution-name {
+  font-size: clamp(24px, 2.1vw, 34px);
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+@utility institution-subtitle {
+  margin-top: 24px;
+  color: var(--portal-gold);
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+@utility pm-shri-mark {
+  display: flex;
+  width: 205px;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: Georgia, serif;
+  line-height: 0.78;
+  color: var(--portal-gold);
+}
+
+@utility pm-mark-small { font-size: 32px; }
+@utility pm-mark-large { font-size: 51px; color: oklch(0.64 0.19 39); }
+@utility pm-mark-caption {
+  margin-top: 12px;
+  color: var(--color-primary-foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+@utility portal-navigation {
+  position: relative;
+  z-index: 20;
+  height: 55px;
+  color: var(--color-primary-foreground);
+  background: linear-gradient(105deg, var(--portal-blue-deep), var(--portal-teal));
+  border-top: 1px solid color-mix(in oklab, var(--primary-foreground) 28%, transparent);
+  overflow: visible;
+}
+
+@utility nav-item {
+  display: flex;
+  height: 55px;
+  align-items: center;
+  gap: 2px;
+  padding-inline: 16px;
+  color: inherit;
+  white-space: nowrap;
+  background: transparent;
+  font-size: 17px;
+  &:hover, &:focus-visible { background: color-mix(in oklab, var(--portal-blue-deep) 35%, transparent); }
+}
+
+@utility nav-item-active {
+  color: var(--color-secondary-foreground);
+  background: var(--portal-aqua);
+}
+
+@utility nav-menu-button {
+  display: grid;
+  width: 64px;
+  height: 55px;
+  place-items: center;
+  color: inherit;
+  background: transparent;
+  &:hover, &:focus-visible { background: color-mix(in oklab, var(--portal-blue-deep) 35%, transparent); }
+}
+
+@utility enrollment-dropdown {
+  position: absolute;
+  top: 55px;
+  left: 0;
+  z-index: 30;
+  width: 270px;
+  background: var(--portal-blue-deep);
+  box-shadow: 0 8px 14px color-mix(in oklab, var(--foreground) 18%, transparent);
+}
+
+@utility dropdown-option {
+  display: block;
+  width: 100%;
+  padding: 15px 20px;
+  color: var(--color-primary-foreground);
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.35;
+  background: var(--portal-blue-deep);
+  border-bottom: 1px solid color-mix(in oklab, var(--primary-foreground) 29%, transparent);
+  &:hover, &:focus-visible { background: var(--portal-aqua); color: var(--color-secondary-foreground); }
+}
+
+@utility dropdown-option-current {
+  background: var(--portal-aqua);
+  color: var(--color-secondary-foreground);
+}
+
+@utility portal-content {
+  width: min(100% - 40px, 1220px);
+  min-height: 900px;
+  margin-inline: auto;
+  padding-top: 28px;
+  padding-bottom: 70px;
+}
+
+@utility portal-breadcrumb {
+  display: flex;
+  min-height: 48px;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+  color: var(--color-primary);
+  font-size: 16px;
+  & button { color: inherit; background: transparent; }
+  & button:hover { text-decoration: underline; }
+  & > span:last-child { max-width: 530px; }
+}
+
+@utility portal-icon-action {
+  display: grid;
+  width: 25px;
+  height: 28px;
+  place-items: center;
+  color: inherit;
+  background: transparent;
+}
+
+@utility portal-page-title {
+  margin: 36px 0 50px;
+  font-size: 28px;
+  line-height: 1.25;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+@utility portal-table-scroll {
+  width: 100%;
+  overflow-x: scroll;
+  padding-bottom: 12px;
+  scrollbar-color: oklch(0.66 0 0) oklch(0.96 0 0);
+  scrollbar-width: auto;
+  &:focus-visible { outline: 2px solid var(--ring); outline-offset: 3px; }
+}
+
+@utility enrollment-table {
+  width: 100%;
+  min-width: 1210px;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 16px;
+  & thead { color: var(--color-primary-foreground); background: var(--table-head); }
+  & thead th {
+    height: 134px;
+    padding: 14px 11px;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: 700;
+    line-height: 1.55;
+    border-color: var(--table-head);
+  }
+  & thead th span { display: block; }
+  & thead th:first-child { width: 110px; }
+  & thead th:nth-child(2) { width: 92px; }
+  & thead th:nth-child(3) { width: 111px; }
+  & thead th:nth-child(4) { width: 97px; }
+  & thead th:nth-child(5), & thead th:nth-child(6) { width: 91px; }
+  & thead th:nth-child(7), & thead th:nth-child(8) { width: 107px; }
+  & thead th:nth-child(9) { width: 104px; }
+  & thead th:nth-child(10), & thead th:nth-child(11) { width: 92px; }
+  & thead th:nth-child(12) { width: 120px; }
+  & tbody tr:nth-child(even) { background: var(--table-stripe); }
+  & tbody th, & tbody td {
+    height: 45px;
+    padding: 9px 11px;
+    text-align: left;
+    font-weight: 400;
+    border: 1px solid var(--border);
+  }
+}
+
+@media (max-width: 1050px) {
+  .portal-navigation { overflow-x: auto; overflow-y: visible; }
+  .portal-shell { width: calc(100% - 24px); }
+  .portal-content { width: calc(100% - 30px); }
+  .nav-item { padding-inline: 13px; }
+}
+
+@media (max-width: 700px) {
+  .portal-institution-header { height: 156px; }
+  .kvs-emblem { width: 86px; height: 86px; }
+  .kvs-emblem svg { width: 32px; }
+  .institution-name { font-size: 21px; }
+  .institution-subtitle { margin-top: 13px; font-size: 14px; }
+  .pm-shri-mark { display: none; }
+  .portal-page-title { margin: 25px 0 34px; font-size: 24px; }
+}
